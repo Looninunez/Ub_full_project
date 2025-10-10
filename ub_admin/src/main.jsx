@@ -1,0 +1,1 @@
+import React from 'react';import { createRoot } from 'react-dom/client';function App(){return <div style={{fontFamily:'sans-serif',padding:20}}><h1>Ub Admin</h1><p>Panel básico listo</p></div>}const root = createRoot(document.getElementById('root'));root.render(<App/>);

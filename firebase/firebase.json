@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "www.ubapp.com",
+    "public": "ub_passenger/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

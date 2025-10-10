@@ -1,0 +1,15 @@
+name: ub_passenger
+description: Ub Passenger app
+publish_to: 'none'
+version: 0.1.0
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.6.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/passenger_logo.png

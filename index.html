@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración UB</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      header {
+        background: #219150;
+        color: white;
+        padding: 15px 0;
+        font-size: 1.5em;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        margin: 10px;
+        padding: 20px;
+        width: 250px;
+      }
+      button {
+        background: #219150;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1a7741;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Panel de Administración UB</header>
+    <div class="container">
+      <div class="card">
+        <h2>🧍‍♂️ Pasajeros</h2>
+        <button>Ver lista</button>
+      </div>
+      <div class="card">
+        <h2>🚗 Conductores</h2>
+        <button>Ver lista</button>
+      </div>
+      <div class="card">
+        <h2>📊 Viajes</h2>
+        <button>Ver historial</button>
+      </div>
+    </div>
+  </body>
+</html>

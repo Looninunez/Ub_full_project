@@ -3,63 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panel de Administración UB</title>
+    <title>Ub Passenger - Inicio</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background: #f2f2f2;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: #000;
+        color: white;
+        text-align: center;
         margin: 0;
         padding: 0;
-        text-align: center;
       }
-      header {
-        background: #219150;
-        color: white;
-        padding: 15px 0;
-        font-size: 1.5em;
+
+      .logo {
+        margin-top: 100px;
       }
-      .container {
+
+      .logo img {
+        width: 90px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        margin-top: 25px;
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+
+      .input-group {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 20px;
-      }
-      .card {
-        background: white;
+        align-items: center;
+        margin: 25px auto;
+        width: 80%;
+        max-width: 400px;
+        background-color: #111;
         border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        margin: 10px;
-        padding: 20px;
-        width: 250px;
+        padding: 8px;
       }
-      button {
-        background: #219150;
-        color: white;
+
+      input {
+        width: 100%;
+        background: transparent;
         border: none;
+        color: white;
+        font-size: 1em;
         padding: 10px;
-        border-radius: 5px;
+        outline: none;
+      }
+
+      button.main {
+        width: 80%;
+        max-width: 400px;
+        padding: 15px;
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: 600;
         cursor: pointer;
       }
-      button:hover {
-        background: #1a7741;
+
+      button.main:hover {
+        background-color: #ccc;
+      }
+
+      .divider {
+        margin: 25px auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: gray;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: gray;
+        margin: 0 10px;
+      }
+
+      .social-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 400px;
+        background-color: #111;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        margin: 8px auto;
+        padding: 12px;
+        cursor: pointer;
+      }
+
+      .social-btn:hover {
+        background-color: #222;
+      }
+
+      .footer {
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: gray;
       }
     </style>
   </head>
   <body>
-    <header>Panel de Administración UB</header>
-    <div class="container">
-      <div class="card">
-        <h2>🧍‍♂️ Pasajeros</h2>
-        <button>Ver lista</button>
-      </div>
-      <div class="card">
-        <h2>🚗 Conductores</h2>
-        <button>Ver lista</button>
-      </div>
-      <div class="card">
-        <h2>📊 Viajes</h2>
-        <button>Ver historial</button>
-      </div>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png" alt="Ub logo" />
+    </div>
+    <h1>Empieza con Ub</h1>
+
+    <div class="input-group">
+      <input type="tel" placeholder="Número de teléfono móvil" />
+    </div>
+
+    <button class="main">Continuar</button>
+
+    <div class="divider">o</div>
+
+    <button class="social-btn">  Continúa con Apple</button>
+    <button class="social-btn">G  Continúa con Google</button>
+    <button class="social-btn">✉️  Continuar con el correo electrónico</button>
+
+    <div class="divider">o</div>
+
+    <div class="footer">
+      Inicia sesión en la app de Ub
     </div>
   </body>
 </html>
